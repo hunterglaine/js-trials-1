@@ -81,7 +81,20 @@ def get_range(start, stop):
 
 
 def censor_vowels(word):
-    pass  # TODO: replace this line with your code
+    """ Given a string, return a string where vowels are replaced with "*".
+    
+    >>> censor_vowels("hello world")
+    'h*ll* w*rld'
+    """
+    chars = []
+
+    for letter in word:
+        if letter in "aeiou":
+            chars.append("*")
+        else:
+            chars.append(letter)
+    return "".join(chars)
+
 
 
 def snake_to_camel(string):
