@@ -2,7 +2,16 @@
 
 
 def output_all_items(items):
-    pass  # TODO: replace this line with your code
+    """"Print each item in the given list
+
+    >>> output_all_items([1, "hello", True])
+    1
+    hello
+    True
+    
+    """
+    for item in items:
+        print(item)
 
 
 def get_all_evens(nums):
