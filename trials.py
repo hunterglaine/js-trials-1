@@ -117,7 +117,19 @@ def longest_word_length(words):
 
 
 def longest_word_length(words):
-    pass  # TODO: replace this line with your code
+    """Return the length of the longest word in the given list of words.
+    
+    >>> longest_word_length(['hello', 'world'])
+    5
+    """
+
+    longest = len(words[0])
+
+    for word in words:
+        if longest < len(word):
+            lengest = len(word)
+
+    return longest
 
 
 def truncate(string):
