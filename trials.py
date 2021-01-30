@@ -148,7 +148,21 @@ def truncate(string):
     return ''.join(result)
 
 def has_balanced_parens(string):
-    pass  # TODO: replace this line with your code
+    """Return true if all parentheses in a given string are balanced.
+    
+    >>> has_balanced_parens('()')
+    True
+    """
+
+    parens = 0
+
+    for char in string:
+        if char == "(":
+            parens += 1
+        elif char == ")":
+            parens -= 1
+
+    return parens == 0
 
 
 def compress(string):
